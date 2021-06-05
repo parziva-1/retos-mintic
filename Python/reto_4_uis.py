@@ -1,4 +1,4 @@
-def clasificacion_huevos(lista: float):
+def clasificacion_huevos(lista: float) -> list:
     A = 0
     AA = 0
     AAA = 0
@@ -14,7 +14,7 @@ def clasificacion_huevos(lista: float):
             BC += 1
     return calcular_bandejas(A, AA, AAA, BC)
 
-def calcular_bandejas(A: int, AA: int, AAA: int, BC: int):
+def calcular_bandejas(A: int, AA: int, AAA: int, BC: int) -> list:
     bandeja_A = A // 30
     bandeja_AA = AA // 24
     bandeja_AAA = AAA // 14
